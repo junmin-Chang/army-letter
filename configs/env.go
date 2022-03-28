@@ -8,7 +8,7 @@ import (
 )
 
 func EnvMongoURI() string {
-	err := godotenv.Load()
+	err := godotenv.Load("../.env")
 	if err != nil {
 		log.Fatal("환경변수 불러오기 실패")
 	}
